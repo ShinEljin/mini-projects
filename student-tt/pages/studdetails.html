@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce64f64b31.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/06_student details/studdetails.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Student Timetable</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="title">
+          <h2>Student TT's</h2>
+        </div>
+        <div class="menus">
+          <a href="../index.html"
+            ><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a
+          >
+          <a href="./class.html"
+            ><i class="far fa-file"></i><span>Class TTs</span></a
+          >
+          <a href="./exam.html"
+            ><i class="fas fa-book-open"></i><span>Exam TTs</span></a
+          >
+          <a href="./personal.html"
+            ><i class="fas fa-user-shield"></i><span>Personal TTs</span></a
+          >
+          <a href="./notices.html"
+            ><i class="fas fa-bell"></i><span>Notices</span></a
+          >
+          <a href="./studdetails.html"
+            ><i class="fas fa-info-circle"></i><span>Student Details</span></a
+          >
+        </div>
+        <div class="back">
+          <a href="../index.html"><</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="menu-title">
+          <h4><span>Student Details /</span> User</h4>
+        </div>
+        <div class="sd-content">
+          <div class="student-details">
+            <div>
+              <div>
+                <label for="student-number">Student Number</label>
+                <h3 id="student-number"></h3>
+                <input class="hide i-sn" type="text" value="" />
+              </div>
+              <div class="btn-container">
+                <button class="edit-btn btn-primary">Edit</button>
+              </div>
+            </div>
+            <div>
+              <div>
+                <label for="lName">Last Name</label>
+                <h3 id="lName"></h3>
+                <input class="hide i-ln" type="text" value="" />
+              </div>
+              <div>
+                <label for="fName">First Name</label>
+                <h3 id="fName"></h3>
+                <input class="hide i-fn" type="text" value="" />
+              </div>
+              <div>
+                <label for="mi">Middle Initial</label>
+                <h3 id="mi"></h3>
+                <input class="hide i-mi" type="text" value="" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <label for="gender">Gender</label>
+                <h3 id="gender"></h3>
+                <input class="hide i-g" type="text" value="" />
+              </div>
+              <div>
+                <label for="civil-status">Civil Status</label>
+                <h3 id="civil-status"></h3>
+                <input class="hide i-cs" type="text" value="" />
+              </div>
+              <div>
+                <label for="pedigree">Pedigree</label>
+                <h3 id="pedigree"></h3>
+                <input class="hide i-p" type="text" value="" />
+              </div>
+              <div>
+                <label for="coc">Country of Citizenship</label>
+                <h3 id="coc"></h3>
+                <input class="hide i-c" type="text" value="" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <label for="stud-type">Student Type</label>
+                <h3 id="stud-type"></h3>
+                <input class="hide i-st" type="text" value="" />
+              </div>
+              <div>
+                <label for="reg-status">Registration Status</label>
+                <h3 id="reg-status"></h3>
+                <input class="hide i-rs" type="text" value="" />
+              </div>
+              <div>
+                <label for="deg-prog">Degree Program</label>
+                <h3 id="deg-prog"></h3>
+                <input class="hide i-dp" type="text" value="" />
+              </div>
+              <div>
+                <label for="year">Year</label>
+                <h3 id="year"></h3>
+                <input class="hide i-yr" type="text" value="" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <label for="plm-email">Official PLM Email</label>
+                <h3 id="plm-email"></h3>
+                <input class="hide i-ple" type="text" value="" />
+              </div>
+              <div>
+                <label for="personal-email">Personal Email</label>
+                <h3 id="personal-email"></h3>
+                <input class="hide i-pee" type="text" value="" />
+              </div>
+            </div>
+            <div class="details-lastrow">
+              <div>
+                <label for="num">Mobile Number</label>
+                <h3 id="num"></h3>
+                <input class="hide i-num" type="text" value="" />
+              </div>
+              <div class="btn-container">
+                <button class="last-btn btn-secondary btn-discard hide">
+                  Discard
+                </button>
+                <button class="last-btn btn-primary btn-save hide">
+                  Save Changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/details.js" type="module"></script>
+  </body>
+</html>

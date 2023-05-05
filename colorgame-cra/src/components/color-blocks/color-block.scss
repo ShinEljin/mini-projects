@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .color-block-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    .color-block {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+    }
+  }
+
+  .start-btn {
+    margin: 2rem 8rem 0;
+    height: 3rem;
+  }
+}

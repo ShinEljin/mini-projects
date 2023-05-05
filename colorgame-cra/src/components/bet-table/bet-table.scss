@@ -1,0 +1,46 @@
+.bet-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 2rem;
+
+  .bet-color {
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+
+    &.color-black {
+      background-color: black;
+    }
+
+    &.color-yellow {
+      background-color: yellow;
+    }
+
+    &.color-red {
+      background-color: red;
+    }
+
+    &.color-orange {
+      background-color: orange;
+    }
+
+    &.color-green {
+      background-color: green;
+    }
+
+    &.color-blue {
+      background-color: blue;
+    }
+  }
+}
+
+.clr-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}

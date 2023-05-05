@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce64f64b31.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/03_exam tt/exam.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Student Timetable</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="title">
+          <h2>Student TT's</h2>
+        </div>
+        <div class="menus">
+          <a href="../index.html"
+            ><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a
+          >
+          <a href="./class.html"
+            ><i class="far fa-file"></i><span>Class TTs</span></a
+          >
+          <a href="./exam.html"
+            ><i class="fas fa-book-open"></i><span>Exam TTs</span></a
+          >
+          <a href="./personal.html"
+            ><i class="fas fa-user-shield"></i><span>Personal TTs</span></a
+          >
+          <a href="./notices.html"
+            ><i class="fas fa-bell"></i><span>Notices</span></a
+          >
+          <a href="./studdetails.html"
+            ><i class="fas fa-info-circle"></i><span>Student Details</span></a
+          >
+        </div>
+        <div class="back">
+          <a href="../index.html"><</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="menu-title">
+          <h3><span>Exam Timetable /</span> User</h3>
+        </div>
+        <div class="classes">
+          <div class="header-classes">
+            <h3>
+              <span
+                ><i class="fas fa-calendar-alt fa-lg"></i>Exam Timetable</span
+              >
+            </h3>
+          </div>
+          <div class="exam-schedule">
+            <table>
+              <tr class="examschedule-heading">
+                <th>Edit/Del</th>
+                <th>Date</th>
+                <th>Unit Code</th>
+                <th>Subject Name</th>
+                <th>Time</th>
+              </tr>
+              <tr class="0">
+                <td>
+                  <button class="edit0">Edit</button>
+                  <button class="delete0">Delete</button>
+                </td>
+                <td>
+                  <input class="hide i-date0 input0" type="text" value="" />
+                  <p class="p-date0 p0"></p>
+                </td>
+                <td>
+                  <input class="hide i-code0 input0" type="text" value="" />
+                  <p class="p-code0 p0"></p>
+                </td>
+                <td>
+                  <input class="hide i-subject0 input0" type="text" value="" />
+                  <p class="p-subject0 p0"></p>
+                </td>
+                <td>
+                  <input class="hide i-time0 input0" type="text" value="" />
+                  <p class="p-time0 p0"></p>
+                </td>
+              </tr>
+              <tr class="1">
+                <td>
+                  <button class="edit1">Edit</button>
+                  <button class="delete1">Delete</button>
+                </td>
+                <td>
+                  <input class="hide i-date1 input1" type="text" value="" />
+                  <p class="p-date1 p1"></p>
+                </td>
+                <td>
+                  <input class="hide i-code1 input1" type="text" value="" />
+                  <p class="p-code1 p1"></p>
+                </td>
+                <td>
+                  <input class="hide i-subject1 input1" type="text" value="" />
+                  <p class="p-subject1 p1"></p>
+                </td>
+                <td>
+                  <input class="hide i-time1 input1" type="text" value="" />
+                  <p class="p-time1 p1"></p>
+                </td>
+              </tr>
+              <tr class="2">
+                <td>
+                  <button class="edit2">Edit</button>
+                  <button class="delete2">Delete</button>
+                </td>
+                <td>
+                  <input class="hide i-date2 input2" type="text" value="" />
+                  <p class="p-date2 p2"></p>
+                </td>
+                <td>
+                  <input class="hide i-code2 input2" type="text" value="" />
+                  <p class="p-code2 p2"></p>
+                </td>
+                <td>
+                  <input class="hide i-subject2 input2" type="text" value="" />
+                  <p class="p-subject2 p2"></p>
+                </td>
+                <td>
+                  <input class="hide i-time2 input2" type="text" value="" />
+                  <p class="p-time2 p2"></p>
+                </td>
+              </tr>
+              <tr class="3">
+                <td>
+                  <button class="edit3">Edit</button>
+                  <button class="delete3">Delete</button>
+                </td>
+                <td>
+                  <input class="hide i-date3 input3" type="text" value="" />
+                  <p class="p-date3 p3"></p>
+                </td>
+                <td>
+                  <input class="hide i-code3 input3" type="text" value="" />
+                  <p class="p-code3 p3"></p>
+                </td>
+                <td>
+                  <input class="hide i-subject3 input3" type="text" value="" />
+                  <p class="p-subject3 p3"></p>
+                </td>
+                <td>
+                  <input class="hide i-time3 input3" type="text" value="" />
+                  <p class="p-time3 p3"></p>
+                </td>
+              </tr>
+              <tr class="4">
+                <td>
+                  <button class="edit4">Edit</button>
+                  <button class="delete4">Delete</button>
+                </td>
+                <td>
+                  <input class="hide i-date4 input4" type="text" value="" />
+                  <p class="p-date4 p4"></p>
+                </td>
+                <td>
+                  <input class="hide i-code4 input4" type="text" value="" />
+                  <p class="p-code4 p4"></p>
+                </td>
+                <td>
+                  <input class="hide i-subject4 input4" type="text" value="" />
+                  <p class="p-subject4 p4"></p>
+                </td>
+                <td>
+                  <input class="hide i-time4 input4" type="text" value="" />
+                  <p class="p-time4 p4"></p>
+                </td>
+              </tr>
+              <tr class="5">
+                <td>
+                  <button class="edit5">Edit</button>
+                  <button class="delete5">Delete</button>
+                </td>
+                <td>
+                  <input class="hide i-date5 input5" type="text" value="" />
+                  <p class="p-date5 p5"></p>
+                </td>
+                <td>
+                  <input class="hide i-code5 input5" type="text" value="" />
+                  <p class="p-code5 p5"></p>
+                </td>
+                <td>
+                  <input class="hide i-subject5 input5" type="text" value="" />
+                  <p class="p-subject5 p5"></p>
+                </td>
+                <td>
+                  <input class="hide i-time5 input5" type="text" value="" />
+                  <p class="p-time5 p5"></p>
+                </td>
+              </tr>
+              <tr class="6">
+                <td>
+                  <button class="edit6">Edit</button>
+                  <button class="delete6">Delete</button>
+                </td>
+                <td>
+                  <input class="hide i-date6 input6" type="text" value="" />
+                  <p class="p-date6 p6"></p>
+                </td>
+                <td>
+                  <input class="hide i-code6 input6" type="text" value="" />
+                  <p class="p-code6 p6"></p>
+                </td>
+                <td>
+                  <input class="hide i-subject6 input6" type="text" value="" />
+                  <p class="p-subject6 p6"></p>
+                </td>
+                <td>
+                  <input class="hide i-time6 input6" type="text" value="" />
+                  <p class="p-time6 p6"></p>
+                </td>
+              </tr>
+              <tr class="7">
+                <td>
+                  <button class="edit7">Edit</button>
+                  <button class="delete7">Delete</button>
+                </td>
+                <td>
+                  <input class="hide i-date7 input7" type="text" value="" />
+                  <p class="p-date7 p7"></p>
+                </td>
+                <td>
+                  <input class="hide i-code7 input7" type="text" value="" />
+                  <p class="p-code7 p7"></p>
+                </td>
+                <td>
+                  <input class="hide i-subject7 input7" type="text" value="" />
+                  <p class="p-subject7 p7"></p>
+                </td>
+                <td>
+                  <input class="hide i-time7 input7" type="text" value="" />
+                  <p class="p-time7 p7"></p>
+                </td>
+              </tr>
+              <tr class="8">
+                <td>
+                  <button class="edit8">Edit</button>
+                  <button class="delete8">Delete</button>
+                </td>
+                <td>
+                  <input class="hide i-date8 input8" type="text" value="" />
+                  <p class="p-date8 p8"></p>
+                </td>
+                <td>
+                  <input class="hide i-code8 input8" type="text" value="" />
+                  <p class="p-code8 p8"></p>
+                </td>
+                <td>
+                  <input class="hide i-subject8 input8" type="text" value="" />
+                  <p class="p-subject8 p8"></p>
+                </td>
+                <td>
+                  <input class="hide i-time8 input8" type="text" value="" />
+                  <p class="p-time8 p8"></p>
+                </td>
+              </tr>
+              <tr class="9">
+                <td>
+                  <button class="edit9">Edit</button>
+                  <button class="delete9">Delete</button>
+                </td>
+                <td>
+                  <input class="hide i-date9 input9" type="text" value="" />
+                  <p class="p-date9 p9"></p>
+                </td>
+                <td>
+                  <input class="hide i-code9 input9" type="text" value="" />
+                  <p class="p-code9 p9"></p>
+                </td>
+                <td>
+                  <input class="hide i-subject9 input9" type="text" value="" />
+                  <p class="p-subject9 p9"></p>
+                </td>
+                <td>
+                  <input class="hide i-time9 input9" type="text" value="" />
+                  <p class="p-time9 p9"></p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/exam.js" type="module"></script>
+  </body>
+</html>

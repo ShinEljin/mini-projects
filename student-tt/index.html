@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce64f64b31.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/01_dashboard/dashboard.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Student Timetable</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="title">
+          <h2>Student TT's</h2>
+        </div>
+        <div class="menus">
+          <a href="./index.html"
+            ><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a
+          >
+          <a href="./pages/class.html"
+            ><i class="far fa-file"></i><span>Class TTs</span></a
+          >
+          <a href="./pages/exam.html"
+            ><i class="fas fa-book-open"></i><span>Exam TTs</span></a
+          >
+          <a href="./pages/personal.html"
+            ><i class="fas fa-user-shield"></i><span>Personal TTs</span></a
+          >
+          <a href="./pages/notices.html"
+            ><i class="fas fa-bell"></i><span>Notices</span></a
+          >
+          <a href="./pages/studdetails.html"
+            ><i class="fas fa-info-circle"></i><span>Student Details</span></a
+          >
+        </div>
+        <div class="back">
+          <a href="./index.html"><</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="menu-title">
+          <h3><span>Dashboard /</span> User</h3>
+        </div>
+        <div class="timetables">
+          <div class="class tts">
+            <div class="upper">Class Timetable</div>
+            <div class="lower">
+              <a href="./pages/class.html"><span>View Details</span>></a>
+            </div>
+          </div>
+          <div class="exam tts">
+            <div class="upper">Exam Timetable</div>
+            <div class="lower">
+              <a href="./pages/exam.html"><span>View Details</span>></a>
+            </div>
+          </div>
+          <div class="personal tts">
+            <div class="upper">Personal Timetable</div>
+            <div class="lower">
+              <a href="./pages/personal.html"><span>View Details</span>></a>
+            </div>
+          </div>
+          <div class="notices tts">
+            <div class="upper">Notice Board</div>
+            <div class="lower">
+              <a href="./pages/notices.html"><span>View Details</span>></a>
+            </div>
+          </div>
+        </div>
+        <div class="classes-today">
+          <div class="ct-header">
+            <h3>
+              <span><i class="fas fa-calendar-alt fa-lg"></i></span><span class="today">Classes
+                Today: </span>
+            </h3>
+          </div>
+          <div class="schedule">
+            <table>
+              <tr class="schedule-heading">
+                <th class="unit-code">Unit Code</th>
+                <th class="subject">Subject Name</th>
+                <th clas="time">Time</th>
+              </tr>
+              <tr class="0">
+                <td>
+                  <p class="p-code0 p0"></p>
+                </td>
+                <td>
+                  <p class="p-subject0 p0"></p>
+                </td>
+                <td>
+                  <p class="p-time0 p0"></p>
+                </td>
+              </tr>
+              <tr class="1">
+                <td>
+                  <p class="p-code1 p1"></p>
+                </td>
+                <td>
+                  <p class="p-subject1 p1"></p>
+                </td>
+                <td>
+                  <p class="p-time1 p1"></p>
+                </td>
+              </tr>
+              <tr class="2">
+                <td>
+                  <p class="p-code2 p2"></p>
+                </td>
+                <td>
+                  <p class="p-subject2 p2"></p>
+                </td>
+                <td>
+                  <p class="p-time2 p2"></p>
+                </td>
+              </tr>
+              <tr class="3">
+                <td>
+                  <p class="p-code3 p3"></p>
+                </td>
+                <td>
+                  <p class="p-subject3 p3"></p>
+                </td>
+                <td>
+                  <p class="p-time3 p3"></p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/dashboard.js"></script>
+  </body>
+</html>

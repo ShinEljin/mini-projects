@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Accusoft</title>
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2><span class="lab la-accusoft"></span> <span> Accusoft</span></h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="" class="active">
+              <span class="las la-igloo"></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="las la-users"></span>
+              <span>Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="las la-clipboard-list"></span>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="las la-shopping-bag"></span>
+              <span>Orders</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="las la-receipt"></span>
+              <span>Inventory</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="las la-user-circle"></span>
+              <span>Accounts</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="las la-clipboard-list"></span>
+              <span>Tasks</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <h2>
+          <label for="nav-toggle">
+            <span class="las la-bars"></span>
+          </label>
+          Dashboard
+        </h2>
+
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" name="" id="" placeholder="Search here" />
+        </div>
+
+        <div class="user-wrapper">
+          <img
+            src="data:image/jpeg;base64,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"
+            width="40px"
+            height="40px"
+            alt=""
+          />
+          <div>
+            <h4>John Doe</h4>
+            <small>Super Admin</small>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="cards">
+          <div class="card-single">
+            <div>
+              <h1>54</h1>
+              <span>Customers</span>
+            </div>
+            <div>
+              <span class="las la-users"> </span>
+            </div>
+          </div>
+
+          <div class="card-single">
+            <div>
+              <h1>79</h1>
+              <span>Projects</span>
+            </div>
+            <div>
+              <span class="las la-clipboard"> </span>
+            </div>
+          </div>
+
+          <div class="card-single">
+            <div>
+              <h1>124</h1>
+              <span>Orders</span>
+            </div>
+            <div>
+              <span class="las la-shopping-bag"> </span>
+            </div>
+          </div>
+
+          <div class="card-single">
+            <div>
+              <h1>$6k</h1>
+              <span>Income</span>
+            </div>
+            <div>
+              <span class="las la-wallet"> </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-grid">
+          <div class="projects">
+            <div class="card">
+              <div class="card-header">
+                <h3>Recent Projects</h3>
+                <button>
+                  See all <span class="las la-arrow-right"></span>
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table width="100%">
+                    <thead>
+                      <tr>
+                        <td>Project Title</td>
+                        <td>Department</td>
+                        <td>Status</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>UI/UX Design</td>
+                        <td>UI Team</td>
+                        <td><span class="status purple"></span>Review</td>
+                      </tr>
+                      <tr>
+                        <td>Web Development</td>
+                        <td>Frontend</td>
+                        <td><span class="status pink"></span>In progress</td>
+                      </tr>
+                      <tr>
+                        <td>Ushop App</td>
+                        <td>UI Team</td>
+                        <td><span class="status orange"></span>Pending</td>
+                      </tr>
+                      <tr>
+                        <td>UI/UX Design</td>
+                        <td>UI Team</td>
+                        <td><span class="status purple"></span>Review</td>
+                      </tr>
+                      <tr>
+                        <td>Web Development</td>
+                        <td>Frontend</td>
+                        <td><span class="status pink"></span>In progress</td>
+                      </tr>
+                      <tr>
+                        <td>Ushop App</td>
+                        <td>UI Team</td>
+                        <td><span class="status orange"></span>Pending</td>
+                      </tr>
+                      <tr>
+                        <td>UI/UX Design</td>
+                        <td>UI Team</td>
+                        <td><span class="status purple"></span>Review</td>
+                      </tr>
+                      <tr>
+                        <td>Web Development</td>
+                        <td>Frontend</td>
+                        <td><span class="status pink"></span>In progress</td>
+                      </tr>
+                      <tr>
+                        <td>Ushop App</td>
+                        <td>UI Team</td>
+                        <td><span class="status orange"></span>Pending</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="customers">
+            <div class="card">
+              <div class="card-header">
+                <h3>New Customer</h3>
+                <button>
+                  See all <span class="las la-arrow-right"></span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <div class="customer">
+                  <div class="info">
+                    <img
+                      src="https://i.pinimg.com/originals/77/3f/70/773f70bf973ed71f5c3a07876235ecdd.png"
+                      width="40px"
+                      height="40px"
+                      alt=""
+                    />
+                    <div>
+                      <h4>Lewis S. Cunningham</h4>
+                      <small>CEO Excerpt</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+
+                <div class="customer">
+                  <div class="info">
+                    <img
+                      src="https://i.pinimg.com/originals/77/3f/70/773f70bf973ed71f5c3a07876235ecdd.png"
+                      width="40px"
+                      height="40px"
+                      alt=""
+                    />
+                    <div>
+                      <h4>Lewis S. Cunningham</h4>
+                      <small>CEO Excerpt</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+
+                <div class="customer">
+                  <div class="info">
+                    <img
+                      src="https://i.pinimg.com/originals/77/3f/70/773f70bf973ed71f5c3a07876235ecdd.png"
+                      width="40px"
+                      height="40px"
+                      alt=""
+                    />
+                    <div>
+                      <h4>Lewis S. Cunningham</h4>
+                      <small>CEO Excerpt</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+
+                <div class="customer">
+                  <div class="info">
+                    <img
+                      src="https://i.pinimg.com/originals/77/3f/70/773f70bf973ed71f5c3a07876235ecdd.png"
+                      width="40px"
+                      height="40px"
+                      alt=""
+                    />
+                    <div>
+                      <h4>Lewis S. Cunningham</h4>
+                      <small>CEO Excerpt</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

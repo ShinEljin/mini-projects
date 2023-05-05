@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.display {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  .navbar {
+    flex: 0.2;
+    background-color: #22577a;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    .title {
+      font-size: 1.5rem;
+      margin-top: 1em;
+      color: white;
+      padding-left: 1em;
+    }
+
+    .menus {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        font-weight: 600;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        background-color: #318ea0;
+        margin: 1em 0;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding-left: 1em;
+        height: 3rem;
+
+        i {
+          margin-right: 0.5em;
+          color: #253346;
+        }
+
+        &:nth-child(2) {
+          background-color: #22b3d3;
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .back {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        background-color: #253346;
+        border: 1px solid transparent;
+        border-radius: 0.625rem;
+        height: 3rem;
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-top: 1em;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 0.8;
+    background-color: #334257;
+
+    .menu-title {
+      flex: 0.03;
+      background-color: #c7ebf3;
+      margin: 2em 2em 0 2em;
+      padding: 0.7em 2em;
+      border-radius: 0.7em;
+
+      h3 {
+        color: #9fbdc3;
+        min-width: 12rem;
+      }
+
+      h3 span {
+        color: #22b3d3;
+      }
+    }
+
+    .classes {
+      flex: 0.97;
+      background-color: #35afa8;
+      margin: 2em;
+      border-radius: 1rem;
+
+      .header-classes {
+        background-color: #36d1c8;
+        padding: 0.5rem 1rem;
+        border-radius: 1rem 1rem 0 0;
+
+        h3 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: white;
+          margin: 0 5em 0 0.5em;
+
+          i {
+            margin-right: 0.5em;
+            color: #35afa8;
+          }
+
+          button {
+            background-color: #318ea0;
+            border: 0;
+            border-radius: 50%;
+            height: 2rem;
+            width: 2rem;
+            color: white;
+            font-weight: bolder;
+          }
+        }
+      }
+
+      .schedule {
+        background-color: #c4c4c4;
+        margin: 1em;
+        color: white;
+        max-height: 100%;
+
+        table {
+          width: 100%;
+
+          .schedule-heading {
+            background-color: #318ea0;
+            padding: 10em;
+          }
+
+          tr {
+            height: 2.5rem;
+            border-radius: 1rem;
+
+            td {
+              text-align: center;
+              color: black;
+              background-color: white;
+
+              button {
+                background-color: #334257;
+                color: white;
+                border: 0px;
+                padding: 0.2em;
+                font-family: "Poppins", sans-serif;
+
+                &:hover {
+                  opacity: 0.7;
+                  cursor: pointer;
+                }
+              }
+
+              input {
+                height: 100%;
+                width: 80%;
+                font-size: 1rem;
+                text-align: center;
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+
+    .navbar {
+      flex: 0.1;
+      padding: 0;
+      margin: 0;
+
+      .title {
+        display: none;
+      }
+
+      .menus {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 0;
+          margin: 1em 0.1em;
+          width: 15%;
+
+          i {
+            margin-right: 0;
+          }
+
+          span {
+            display: none;
+          }
+        }
+      }
+
+      .back {
+        display: none;
+      }
+    }
+
+    .content {
+      flex: 0.9;
+    }
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  body {
+    font-size: 8px;
+  }
+}
